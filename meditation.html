@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meditation Guide - FitEase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">FitEase</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+  <a href="#" class="dropbtn">
+    <img src="images/wellbeing-icon.png" alt="" style="width: 18px; vertical-align: middle; margin-right: 5px;">
+    <div class ="">Wellness</div>
+  </a>
+  <div class="dropdown-content">
+    <a href="mental.html">Mental Wellness</a>
+    <a href="sexual.html">Sexual Health</a>
+    <a href="Skin care.html">Skin care</a>
+    
+    <a href="sleep.html">Better Sleep</a>
+  </div>
+</li>
+        <li><a href="exercise.html">Exercise</a></li>
+        <li><a href="cardio.html">Cardio</a></li>
+        <li><a href="strength.html">Strength</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="meditation.html" class="active">Meditation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="featured">
+    <h2>Meditation Guide</h2>
+    <p>Relax your mind, improve focus, and reduce stress with these meditation techniques and poses.</p>
+
+    <h3>🪑 What You Need</h3>
+    <ul>
+      <li>Quiet space</li>
+      <li>Yoga mat or cushion</li>
+      <li>Optional: scented candles or incense</li>
+      <li>Relaxing background music (see below)</li>
+    </ul>
+
+    <h3>🧘‍♂️ Meditation Poses</h3>
+    <div class="cards">
+
+      <div class="card">
+                <img src="data:image/jpeg;base64,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" alt="Sukhasana Pose">
+
+        <h3>1. Sukhasana (Easy Pose)</h3>
+        <p>Sit cross-legged with spine straight. Rest hands on knees. Ideal for beginners.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHg7TL_PZU0J-bogSFAAJoMJ-seuS-OHLFTQ&s" alt="Lotus Pose">
+        <h3>2. Padmasana (Lotus Pose)</h3>
+        <p>Cross legs and place feet on opposite thighs. Enhances deep focus and stability.</p>
+      </div>
+
+      <div class="card">
+        <img src="data:image/jpeg;base64,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" alt="Half Lotus Pose">
+        <h3>3. Ardha Padmasana (Half Lotus)</h3>
+        <p>One foot rests on the opposite thigh. Easier than full lotus, but still grounding.</p>
+      </div>
+
+      <div class="card">
+        <img src="data:image/jpeg;base64,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" alt="Seiza Pose">
+        <h3>4. Seiza (Kneeling Pose)</h3>
+        <p>Kneel with buttocks on heels. Great for those with tight hips or knee issues.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.squarespace-cdn.com/content/v1/58d013bbe58c6272b30dad0b/1504118889386-TGTYQFOG5U1WNZI19AWX/sit+chair+side+copy.jpg" alt="Chair Meditation">
+        <h3>5. Chair Meditation</h3>
+        <p>Sit on a chair, feet flat, spine upright. Best for longer sessions or back support.</p>
+      </div>
+
+    </div>
+
+    <h3>🎧 Background Meditation Music</h3>
+    <p>Play this soothing music during your session:</p>
+    <audio controls>
+      <source src="media/meditation_music.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <p>Alternatively, use Spotify/YouTube: <a href="https://www.youtube.com/watch?v=1ZYbU82GVz4" target="_blank">Peaceful Mind Music</a></p>
+
+    <h3>🕒 Basic Meditation Practice Steps</h3>
+    <ol>
+      <li>Choose your pose and sit comfortably.</li>
+      <li>Close your eyes and relax your shoulders.</li>
+      <li>Focus on your breath — inhale slowly, exhale gently.</li>
+      <li>Let go of thoughts. If your mind wanders, return to the breath.</li>
+      <li>Continue for 5–20 minutes. Gradually increase with practice.</li>
+    </ol>
+  </section>
+</body>
+</html>

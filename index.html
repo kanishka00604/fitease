@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitEase - Home</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css' rel='stylesheet' />
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">FitEase</div>
+    <nav>
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+  <a href="#" class="dropbtn">
+    <img src="images/wellbeing-icon.png" alt="" style="width: 18px; vertical-align: middle; margin-right: 5px;">
+    <div class ="">Wellness</div>
+  </a>
+  <div class="dropdown-content">
+    <a href="mental.html">Mental Wellness</a>
+    <a href="sexual.html">Sexual Health</a>
+    <a href="Skin care.html">Skin care</a>
+    
+    <a href="sleep.html">Better Sleep</a>
+  </div>
+</li>
+        <li><a href="exercise.html">Exercise</a></li>
+        <li><a href="strength.html">Strength</a></li>
+        <li><a href="cardio.html">Cardio</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="meditation.html">Meditation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      
+      
+</ul>
+
+
+    </nav>
+  </header>
+
+  
+  
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Fitness</h1>
+      <p>The fitness that fits you</p>
+    </div>
+    <img src="https://eliteclubs.com/wp-content/uploads/2019/11/The-Pros-Cons-of-Exercising-with-a-Friend-e1571837163735.jpeg" alt="Fitness Banner">
+  </section>
+  <section class="calendar-section">
+  <h2>Activity Tracker</h2>
+  <div id="calendar"></div>
+</section>
+
+ <section class="featured">
+  <h2>Featured</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/1041835246/photo/fitness-woman-stretching-arms-in-stylish-black-sport-clothes.jpg?s=612x612&w=0&k=20&c=4uJiE6bP9e7d7EEUcb1SxEltCHIBKY6KSazFZtT3ppg=" alt="exercise">
+      <h3 id="exercise-toggle" style="cursor: pointer; color: #007bff;">10 Exercises to Tone Every Inch</h3>
+      <p>Best and most powerful exercises to do daily...</p>
+
+      <div id="exercise-list" style="display: none; margin-top: 10px;">
+        <ol>
+          <li>Push-ups</li>
+          <li>Squats</li>
+          <li>Plank</li>
+          <li>Lunges</li>
+          <li>Mountain Climbers</li>
+          <li>Deadlifts</li>
+          <li>Burpees</li>
+          <li>Bicycle Crunches</li>
+          <li>Jumping Jacks</li>
+          <li>Shoulder Press</li>
+        </ol>
+      </div>
+    </div>
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/924163406/photo/young-woman-doing-cobra-exercise.jpg?s=612x612&w=0&k=20&c=h9nNF3H0eYGIZMTTPy1aGuU8_grk0Hc_caQEU93CU2Y=" alt="yoga">
+          <h3 id="yoga-toggle" style="cursor: pointer; color: #007bff;">YOGA Asanas to Perform Daily</h3>
+           <p> 10 best yoga asanas are....</p>
+           <div id="yoga-list" style="display: none; margin-top: 10px;">
+        <ol>
+          <li>Push-ups</li>
+          <li>Squats</li>
+          <li>Plank</li>
+          <li>Lunges</li>
+          <li>Mountain Climbers</li>
+          <li>Deadlifts</li>
+          <li>Burpees</li>
+          <li>Bicycle Crunches</li>
+          <li>Jumping Jacks</li>
+          <li>Shoulder Press</li>
+        
+        </ol>
+        </div>
+        </div>
+        
+
+  </div>
+</section>
+>
+      
+    
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const calendarEl = document.getElementById('calendar');
+    const calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      selectable: true,
+      dateClick: function(info) {
+        const activity = prompt("Enter your activity for " + info.dateStr);
+        if (activity) {
+          calendar.addEvent({
+            title: activity,
+            start: info.dateStr,
+            allDay: true
+          });
+        }
+      }
+    });
+    calendar.render();
+  });
+</script>
+
+<script>
+  document.getElementById('exercise-toggle').addEventListener('click', function () {
+    const list = document.getElementById('exercise-list');
+    if (list.style.display === 'none') {
+      list.style.display = 'block';
+    } else {
+      list.style.display = 'none';
+    }
+  });
+</script>
+<script>
+  document.getElementById('yoga-toggle').addEventListener('click', function () {
+    const list = document.getElementById('yoga-list');
+    if (list.style.display === 'none') {
+      list.style.display = 'block';
+    } else {
+      list.style.display = 'none';
+    }
+  });
+</script>
+
+
+
+
+</body>
+</html>

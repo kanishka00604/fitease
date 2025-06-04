@@ -1,0 +1,4 @@
+<button onclick="playSound('audio/om.mp3')">Play OM</button>
+<button onclick="playSound('audio/rain.mp3')">Rain Sound</button>
+
+<audio id="medAudio" controls style="display:none;"></audio>
