@@ -40,7 +40,10 @@
       
       
 </ul>
-
+  <div class="auth-buttons">
+    <a href="./views/login.html" class="btn login-btn">Login</a>
+    <a href="./views/signup.html" class="btn signup-btn">Sign Up</a>
+  </div>
 
     </nav>
   </header>
@@ -50,8 +53,8 @@
 
   <section class="hero">
     <div class="hero-text">
-      <h1>Fitness</h1>
-      <p>The fitness that fits you</p>
+      <h1>"Sweat. Smile. Repeat.", "Your Best Workout Starts Today!", and "Push Harder, Go Further!"</h1>
+      <p></p>
     </div>
     <img src="https://eliteclubs.com/wp-content/uploads/2019/11/The-Pros-Cons-of-Exercising-with-a-Friend-e1571837163735.jpeg" alt="Fitness Banner">
   </section>
@@ -151,9 +154,17 @@
     }
   });
 </script>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="FitEaseChat"
+  agent-id="727cb809-e57c-4771-a497-6a24929e3ebb"
+  language-code="en"
+></df-messenger>
 
 
 
 
 </body>
 </html>
+

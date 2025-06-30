@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 20;
   font-family: 'Inter', sans-serif;
   background: #fff;
   color: #222;
@@ -12,7 +12,7 @@ body {
   align-items: center;
   background: rgb(55, 187, 196);
   color: rgb(67, 36, 36);
-  padding: 15px 40px;
+  padding: 32px 40px;
 }
 
 .logo {
@@ -21,13 +21,16 @@ body {
 }
 
 .nav-links {
+  
   list-style: none;
   display: flex;
+  height: 29;
   gap: 20px;
 }
 
 .nav-links a {
-  color: white;
+  font-size:  18px ;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: 600;
 }
@@ -61,9 +64,9 @@ body {
 }
 
 .card {
-  width: 300px;
+  width: 30px;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 2px;
   overflow: hidden;
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -76,7 +79,7 @@ body {
 }
 
 .card h3 {
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px;
 }
 
@@ -98,7 +101,7 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 5.5rem;
   justify-content: center;
 }
 
@@ -106,7 +109,7 @@ body {
   width: 300px;
   background-color: #f5f5f5;
   padding: 1rem;
-  border-radius: 12px;
+  border-radius: 1px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -297,4 +300,33 @@ body {
   background: rgb(13, 102, 109);
   color: rgb(67, 36, 36);
   padding: 15px 40px;
+}
+
+.auth-buttons {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.auth-buttons .btn {
+  padding: 7px 10px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons .btn.signup-btn {
+  background-color: #28a745;
+}
+
+.auth-buttons .btn:hover {
+  background-color: #0056b3;
+}
+.auth-buttons .signup-btn:hover {
+  background-color: #218838;
 }

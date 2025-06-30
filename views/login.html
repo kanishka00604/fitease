@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - FitEase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f3e8ff;
+    }
+    .container {
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .login-box {
+      background: #fff;
+      border-radius: 20px;
+      display: flex;
+      overflow: hidden;
+      width: 800px;
+      max-width: 95%;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+    .form-side {
+      padding: 40px;
+      width: 50%;
+    }
+    .form-side h2 {
+      color: #4a148c;
+    }
+    .form-side input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .form-side .btn {
+      background-color: #9c27b0;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .form-side .social {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .form-side .social button {
+      width: 48%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .image-side {
+      width: 50%;
+      background: url('https://img.freepik.com/free-photo/fit-young-woman-posing-with-bottle-against-violet-background_273609-34418.jpg') center/cover no-repeat;
+    }
+    .form-side .link {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .form-side .link a {
+      color: #9c27b0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <div class="form-side">
+        <h2>Log In</h2>
+        <p>Welcome back! Please enter your details</p>
+        
+        
+        <form onsubmit="event.preventDefault(); login();">
+  <input type="email" id="email" placeholder="Email" required />
+  <input type="password" id="password" placeholder="Password" required />
+          <a href="forgot-password.html" style="font-size: 14px; color: #9c27b0;">Forgot password?</a>
+
+  <button class="btn" type="submit">Log In</button>
+</form>
+
+        <hr style="margin: 20px 0;" />
+        <div class="social">
+          <button><img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" style="height:20px; vertical-align:middle;" /> Google</button>
+          <button><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" style="height:20px; vertical-align:middle;" /> Facebook</button>
+        </div>
+        <div class="link">
+          Don’t have an account? <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+      <div class="image-side"></div>
+    </div>
+  </div>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
